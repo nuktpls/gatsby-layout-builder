@@ -5,11 +5,7 @@ import GlobalContext from '../services/context'
 import Body from '../components/Body'
 
 const BodyContainer = ({ children, opt }) => {
-  const bgImage = bgImage
-    ? {
-        backgroundImage: `url(${opt?.bgImage?.src})`,
-      }
-    : null
+  const bgStyle = bgImage?.src ? `url(${bgImage?.src || ' '})` : 'unset'
   return (
     <GlobalContext.Consumer>
       {value => (
@@ -17,7 +13,7 @@ const BodyContainer = ({ children, opt }) => {
           <Body
             opt={opt || false}
             customClasses={opt?.classes || ''}
-            bgImage={bgImage || false}
+            bgImage={bgStyle || false}
           >
             {children}
           </Body>
