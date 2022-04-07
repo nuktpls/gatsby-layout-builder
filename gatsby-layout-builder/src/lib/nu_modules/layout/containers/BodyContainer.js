@@ -5,7 +5,7 @@ import GlobalContext from '../services/context'
 import Body from '../components/Body'
 
 const BodyContainer = ({ children, opt }) => {
-  const bgStyle = opt.bgImage?.src ? `url(${opt.bgImage?.src || ' '})` : 'unset'
+  const bgStyle = opt?.bgImage?.src ? `url(${opt.bgImage.src || ' '})` : 'unset'
   return (
     <GlobalContext.Consumer>
       {value => (

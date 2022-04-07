@@ -15,13 +15,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 // eslint-disable-next-line
 const BodyContainer = _ref => {
-  var _opt$bgImage, _opt$bgImage2;
+  var _opt$bgImage;
 
   let {
     children,
     opt
   } = _ref;
-  const bgStyle = (_opt$bgImage = opt.bgImage) !== null && _opt$bgImage !== void 0 && _opt$bgImage.src ? "url(".concat(((_opt$bgImage2 = opt.bgImage) === null || _opt$bgImage2 === void 0 ? void 0 : _opt$bgImage2.src) || ' ', ")") : 'unset';
+  const bgStyle = opt !== null && opt !== void 0 && (_opt$bgImage = opt.bgImage) !== null && _opt$bgImage !== void 0 && _opt$bgImage.src ? "url(".concat(opt.bgImage.src || ' ', ")") : 'unset';
   return /*#__PURE__*/_react.default.createElement(_context.default.Consumer, null, value => /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Body.default, {
     opt: opt || false,
     customClasses: (opt === null || opt === void 0 ? void 0 : opt.classes) || '',

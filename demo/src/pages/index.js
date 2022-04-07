@@ -69,7 +69,7 @@ const IndexPage = props => (
           title: 'Loren',
           classes: 'some-class',
           role: null,
-          bgImg: null,
+          // bgImg: null,
         }}
       >
         <h1>BANNER</h1>
