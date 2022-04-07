@@ -52,11 +52,11 @@ const RowContainer = _ref => {
   let theme__color = false;
 
   if (data && data.query) {
-    if (data.query[0].backgroundColor && !opt.bgColor) {
+    if (data.query[0].backgroundColor && !(opt !== null && opt !== void 0 && opt.bgColor)) {
       defaultBgColor = 'row_color__' + data.query[0].backgroundColor;
       theme__color = true;
-    } else if (opt.bgColor) {
-      defaultBgColor = opt.bgColor;
+    } else if (opt !== null && opt !== void 0 && opt.bgColor) {
+      defaultBgColor = opt === null || opt === void 0 ? void 0 : opt.bgColor;
       theme__color = false;
     } else {
       defaultBgColor = 'white';
@@ -77,29 +77,27 @@ const RowContainer = _ref => {
     rowHeading: data ? rowHeading : defaulHeading
   };
   const optNormatize = {
-    elementClass: opt.classes || null,
-    boxed: opt.isBoxed || false,
+    elementClass: (opt === null || opt === void 0 ? void 0 : opt.classes) || null,
+    boxed: (opt === null || opt === void 0 ? void 0 : opt.isBoxed) || false,
     bgColor: theme__color,
-    numColumns: opt.numColumns || 1,
-    widthColumns: opt.widthColumns || '1fr',
-    alignTo: opt.alignTo || 'left',
-    title: opt.title || opt.classes,
-    role: opt.role || null
+    numColumns: (opt === null || opt === void 0 ? void 0 : opt.numColumns) || 1,
+    widthColumns: (opt === null || opt === void 0 ? void 0 : opt.widthColumns) || '1fr',
+    alignTo: (opt === null || opt === void 0 ? void 0 : opt.alignTo) || 'left',
+    title: (opt === null || opt === void 0 ? void 0 : opt.title) || (opt === null || opt === void 0 ? void 0 : opt.classes),
+    role: (opt === null || opt === void 0 ? void 0 : opt.role) || null
   };
   const bgOpt = {
     theme_color: defaultBgColor,
-    value_bgColor: opt.bgColor,
-    background: opt.bgImg
-  }; // console.log('paramsparamsparams')
-  // console.log(opt)
-
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Row.default, {
+    value_bgColor: opt === null || opt === void 0 ? void 0 : opt.bgColor,
+    background: opt === null || opt === void 0 ? void 0 : opt.bgImg
+  };
+  return /*#__PURE__*/_react.default.createElement(_Row.default, {
     children: children,
     params: params,
     opt: optNormatize,
     bgOpt: bgOpt,
-    bgImg: opt.bgImg
-  }));
+    bgImg: opt === null || opt === void 0 ? void 0 : opt.bgImg
+  });
 };
 
 var _default = RowContainer;

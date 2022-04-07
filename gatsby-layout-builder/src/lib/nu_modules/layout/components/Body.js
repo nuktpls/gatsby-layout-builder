@@ -2,13 +2,12 @@
 import React from 'react'
 
 const Body = ({ children, customClasses, bgImage }) => {
-  const bgStyle = bgImage?.src
-    ? {
-        backgroundImage: `url(${bgImage?.src || ' '})`,
-      }
-    : { backgroundImage: 'unset' }
+  const bgStyle = bgImage?.src ? `url(${bgImage?.src || ' '})` : 'unset'
   return (
-    <div className={`boilerplate ${customClasses}`} style={bgStyle}>
+    <div
+      className={`boilerplate ${customClasses}`}
+      style={{ backgroundImage: bgStyle }}
+    >
       {children}
     </div>
   )

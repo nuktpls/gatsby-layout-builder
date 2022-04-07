@@ -73,15 +73,13 @@ Otherwise, you should [create a new gatsby-config.js file](https://www.gatsbyjs.
 ```javascript
 module.exports = {
   plugins: [`gatsby-layout-builder`],
-  // gatsby-config.js
 }
+// gatsby-config.js
 ```
 
 3. Add the plugin correctly
 
-Inside a page or component invoke <Layout type="COMPONENT" />.
-
-Take a look inside the follow Layout components:
+Inside a page or component invoke Layout type="COMPONENT".
 
 ```javascript
 // type="BODY"
@@ -102,28 +100,28 @@ Those types who accept subAgent parameter may be used as wrapper of some childre
 
 4. Dependencies
 
-````json
-	{
-		"dependencies":{
-			"gatsby": "^4.11.1",
-			"gatsby-plugin-image": "^2.11.1",
-			"gatsby-plugin-sass": "^5.11.1",
-			"node-sass": "^7.0.1",
-			"prop-types": "^15.8.1",
-			"react": "^17.0.2",
-			"react-dom": "^17.0.2",
-			"sass": "^1.49.11",
-			"web-vitals": "^2.1.4"
-	},
-  	"devDependencies": {
-    	"prettier": "^2.4.1"
-  }}
-	```
-````
+```json
+{
+  "dependencies": {
+    "gatsby": "^4.11.1",
+    "gatsby-plugin-image": "^2.11.1",
+    "gatsby-plugin-sass": "^5.11.1",
+    "node-sass": "^7.0.1",
+    "prop-types": "^15.8.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.49.11",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "prettier": "^2.4.1"
+  }
+}
+```
 
 ## Keep in touch
 
-Don't mail me yet. Unless you want to do some kind of friendship.
+Don't mail me yet. Unless you want to make some kind of friendship.
 
 Milton Bolonha <miltonbolonha@gmail.com>
 
