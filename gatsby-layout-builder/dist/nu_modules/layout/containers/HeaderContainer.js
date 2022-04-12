@@ -35,12 +35,10 @@ const HeaderContainer = _ref => {
   const logoHeader = opt ? opt.logoHeader : null;
   const hasMainMenu = opt ? opt.mainMenu : null;
   const menuActive = refState ? 'visible' : 'not-visible'; // const mainMenuItems = mainMenuYAML.menu.items
+  // const logoUrl = null
 
-  const {
-    logo_url
-  } = null;
-  const logotype = logo_url ? /*#__PURE__*/_react.default.createElement("a", {
-    href: logo_url,
+  const logotype = opt.logoUrl ? /*#__PURE__*/_react.default.createElement("a", {
+    href: opt.logoUrl,
     className: "logo-link"
   }, opt.logoSvg) : /*#__PURE__*/_react.default.createElement(_gatsby.Link, {
     to: "/",

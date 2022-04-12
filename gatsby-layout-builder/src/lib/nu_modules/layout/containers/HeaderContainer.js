@@ -16,10 +16,10 @@ const HeaderContainer = ({ logo, opt }) => {
 
   const menuActive = refState ? 'visible' : 'not-visible'
   // const mainMenuItems = mainMenuYAML.menu.items
-  const { logo_url } = null
+  // const logoUrl = null
 
-  const logotype = logo_url ? (
-    <a href={logo_url} className="logo-link">
+  const logotype = opt.logoUrl ? (
+    <a href={opt.logoUrl} className="logo-link">
       {opt.logoSvg}
     </a>
   ) : (
