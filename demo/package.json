@@ -14,7 +14,7 @@
     "gatsby-layout-builder": "*",
     "gatsby-plugin-image": "^2.11.1",
     "gatsby-plugin-sharp": "4.11.1",
-    "gatsby-transformer-sharp": "4.11.0",
+    "gatsby-transformer-sharp": "4.13.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0"
