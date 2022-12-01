@@ -10,7 +10,7 @@
     "dev": "gatsby develop"
   },
   "dependencies": {
-    "gatsby": "4.11.1",
+    "gatsby": "5.2.0",
     "gatsby-layout-builder": "*",
     "gatsby-plugin-image": "^2.11.1",
     "gatsby-plugin-sharp": "4.11.1",
