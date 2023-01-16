@@ -43,7 +43,7 @@
     "react-scripts": "^5.0.0"
   },
   "dependencies": {
-    "gatsby": "^4.11.1",
+    "gatsby": "^5.4.1",
     "gatsby-plugin-image": "^2.11.1",
     "gatsby-plugin-sass": "^5.11.1",
     "prop-types": "^15.8.1",
